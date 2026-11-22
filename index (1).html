@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ImageKit Tools – Free Online Image Compressor, Resizer & Converter</title>
+<meta name="description" content="Free image tools that run in your browser: compress, resize, crop and convert JPG, PNG and WebP. No upload, no sign-up.">
+<meta property="og:title" content="ImageKit Tools – Free Online Image Tools">
+<meta property="og:description" content="Compress, resize, crop and convert images privately in your browser.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#6d3cf0">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%236d3cf0%27/%3E%3Cpath d=%27M9 21l5-6 4 4 3-3 3 5z%27 fill=%27%23fff%27/%3E%3Ccircle cx=%2712%27 cy=%2710%27 r=%272.5%27 fill=%27%23fff%27/%3E%3C/svg%3E">
+<style>:root{--v:#6d3cf0;--v2:#f4efff;--ink:#1b1530;--mu:#6b6485;--ln:#e8e2f7}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:#fff}
+a{color:var(--v);text-decoration:none}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible,.drop:focus-within{outline:3px solid #b9a4f7;outline-offset:2px}
+main,header>div,footer>div{max-width:980px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:5;background:#ffffffee;backdrop-filter:blur(10px);border-bottom:1px solid var(--ln)}
+header>div{display:flex;justify-content:space-between;align-items:center;height:60px}nav{display:flex;gap:20px;font-size:15px}nav a{color:var(--mu)}nav a:hover{color:var(--v)}
+.brand{display:flex;align-items:center;gap:9px;font-weight:800;font-size:19px;color:var(--ink)}.brand b{color:var(--v)}
+.logo{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,#8a5cf6,#5b2fe0);display:grid;place-items:center;color:#fff;font-size:15px}
+.hero{margin:18px 0 0;padding:54px 24px 40px;text-align:center;color:#fff;border-radius:28px;background:radial-gradient(circle at 85% 0,#a47bff55 0,transparent 45%),linear-gradient(135deg,#25105a,#4a22c9 60%,#6d3cf0);box-shadow:0 24px 60px #4a22c933}
+h1{font-size:clamp(30px,6.5vw,50px);line-height:1.1;letter-spacing:-.025em;font-weight:800;margin:0 0 14px}h2{margin:44px 0 14px;font-size:24px;letter-spacing:-.01em}
+.hero p{color:#e2d8ff;max-width:540px;margin:0 auto 24px;font-size:18px}.hero h1{color:#fff}.hero .sw{max-width:520px;margin:0 auto}
+input[type=search]{width:100%;padding:16px 20px;border:0;border-radius:99px;font-size:16px;box-shadow:0 10px 30px #1b0a5266}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:18px}.chips span{background:#ffffff1f;border:1px solid #ffffff33;border-radius:99px;padding:6px 14px;font-size:13px;color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:16px}
+.card{display:flex;gap:14px;align-items:flex-start;padding:18px;border:1px solid var(--ln);border-radius:18px;color:var(--ink);background:#fff;box-shadow:0 4px 18px #6d3cf010;transition:transform .15s,box-shadow .15s,border-color .15s}
+.card{position:relative;padding-right:44px}.card:after{content:'';position:absolute;right:18px;top:50%;width:8px;height:8px;border:solid #b9a4f7;border-width:2px 2px 0 0;transform:translateY(-50%) rotate(45deg)}.card:hover{border-color:#b9a4f7;transform:translateY(-2px);box-shadow:0 10px 28px #6d3cf022}
+.ic{flex:none;width:46px;height:46px;border-radius:14px;display:grid;place-items:center;font-style:normal}.ic svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.card b{display:block;margin-bottom:2px}.card span{color:var(--mu);font-size:14px;line-height:1.45;display:block}
+.box{border:1px solid var(--ln);border-radius:20px;padding:22px;box-shadow:0 10px 34px #6d3cf015;background:#fff}.step{display:flex;gap:14px;align-items:flex-start}.step em{flex:none;width:34px;height:34px;border-radius:50%;background:var(--v);color:#fff;display:grid;place-items:center;font-style:normal;font-weight:700}
+.drop{display:block;text-align:center;padding:46px 14px;border:2px dashed #b9a4f7;border-radius:18px;background:linear-gradient(180deg,#faf7ff,#f1eaff);cursor:pointer;color:var(--v);font-weight:700;transition:background .15s}.drop small{display:block;color:var(--mu);font-weight:400;margin-top:4px}
+.drop:hover,.drop.over{background:#ebe1ff}.drop input{position:absolute;opacity:0;width:1px;height:1px}
+.row{display:flex;flex-wrap:wrap;gap:14px;margin:16px 0}.row label{flex:1 1 150px;font-size:14px;color:var(--mu)}
+.row input,.row select{width:100%;padding:10px;border:1px solid var(--ln);border-radius:10px;font-size:16px;margin-top:4px;background:#fff}.row input[type=range]{padding:0;accent-color:var(--v)}.row input[type=color]{height:42px;padding:3px}
+.btn{display:inline-block;background:linear-gradient(135deg,#7c4ff5,#5b2fe0);color:#fff;border:0;border-radius:13px;padding:14px 26px;font-size:16px;font-weight:700;cursor:pointer;box-shadow:0 8px 20px #6d3cf040}
+.btn[aria-disabled=true]{opacity:.4;pointer-events:none;box-shadow:none}.pv{display:block;max-width:100%;max-height:380px;margin:12px auto;border-radius:12px;background:repeating-conic-gradient(#f0ecfa 0 25%,#fff 0 50%) 0 0/16px 16px}
+canvas.pv{touch-action:none;width:100%}.st{background:var(--v2);border-radius:12px;padding:11px 15px;font-size:15px;margin:12px 0}.err{color:#c0262d;font-weight:600;margin:10px 0}
+.ad{margin:34px 0;padding:20px;border:1px dashed var(--ln);border-radius:12px;text-align:center;color:var(--mu);font-size:13px;background:#fcfbff}
+details{border-bottom:1px solid var(--ln);padding:12px 0}summary{cursor:pointer;font-weight:600}details[open] summary{color:var(--v)}details{color:var(--mu)}
+.bc{font-size:14px;color:var(--mu);margin-top:22px}.th{display:flex;align-items:center;gap:14px;margin-top:10px}.th .ic{width:54px;height:54px}.th h1{font-size:clamp(26px,5vw,38px);margin:0}
+.rel{display:flex;flex-wrap:wrap;gap:10px}.rel a{border:1px solid var(--ln);border-radius:99px;padding:7px 16px;font-size:15px}.rel a:hover{background:var(--v2)}
+footer{background:#faf8ff;border-top:1px solid var(--ln);margin-top:60px;padding:34px 0;color:var(--mu);font-size:14px}.fg{display:flex;flex-wrap:wrap;gap:30px;justify-content:space-between}.fg div{max-width:300px}.fg a{display:block;color:var(--mu);margin:4px 0}.fg a:hover{color:var(--v)}
+.ft{display:flex;gap:14px}.ft .ic{width:42px;height:42px;background:var(--v2);color:var(--v)}.ft b{display:block}.ft span{color:var(--mu);font-size:14.5px}.priv{display:flex;gap:8px;align-items:center;justify-content:center;color:var(--mu);font-size:13px;margin-top:16px}.priv svg{width:15px;height:15px;fill:none;stroke:#14a05a;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}.up{width:34px;height:34px;fill:none;stroke:var(--v);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;margin-bottom:8px}.cta{margin-top:50px;border-radius:24px;padding:34px 22px;text-align:center;color:#fff;background:linear-gradient(135deg,#25105a,#5b2fe0)}.cta h2{margin:0 0 14px;color:#fff}.cta .btn{background:#fff;color:var(--v);box-shadow:none}@media(max-width:560px){nav{display:none}.hero{padding-top:38px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style></head><body>
+<header><div><a class="brand" href="#"><span class="logo"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3.5"/><circle cx="9" cy="10" r="1.6"/><path d="M21 16l-5-5-8 8"/></svg></span><span>Image<b>Kit</b> Tools</span></a><nav><a href="#tools">Tools</a><a href="#how">How it works</a><a href="#faq">FAQ</a></nav></div></header>
+<main id="app"></main>
+<footer><div class="fg"><div><b style="color:var(--ink)">ImageKit Tools</b><br>Free image tools that run in your browser. Your images never leave your device.</div><div><b style="color:var(--ink)">Tools</b><span id="fl"></span></div><div>© ImageKit Tools<br>Privacy, Terms, About and Contact pages are coming soon.</div></div></footer>
+<script>
+const $=s=>document.querySelector(s),A=$('#app');
+const T={
+compress:{n:'Image Compressor',d:'Make JPG, PNG and WebP files smaller.',c:'qf',h:'Compress Image Online',p:'Large photos slow down websites and fill up email limits. This compressor re-encodes your picture in your browser and shows exactly how much space you save. Lower the quality slider for smaller files. Note: PNG is lossless, so for big savings pick WebP or JPG output.',f:[['Does it upload my image?','No. Everything runs on your device.'],['Which quality should I use?','Around 70–80% usually looks the same and is much smaller.']]},
+resize:{n:'Image Resizer',d:'Set an exact width and height.',c:'z',h:'Resize Image Online',p:'Enter a new width and height in pixels, keep the aspect ratio locked to avoid stretching, or pick a preset size for common uses like profile photos and thumbnails.',f:[['Will resizing reduce quality?','Making an image smaller is safe. Enlarging can make it look soft.'],['What is aspect ratio?','The width-to-height proportion. Locking it keeps your image from looking stretched.']]},
+jpg2png:{n:'JPG to PNG Converter',d:'Turn JPG photos into PNG files.',c:'',a:'image/jpeg',t:'image/png',h:'JPG to PNG',p:'Convert a JPG into a lossless PNG. Useful when an app or editor asks for PNG. The file may get larger, because PNG stores more data than JPG.',f:[['Why is the PNG bigger?','PNG is lossless, so it keeps every pixel without JPG-style compression.'],['Does it restore lost quality?','No. Conversion cannot bring back detail already lost in the JPG.']]},
+png2jpg:{n:'PNG to JPG Converter',d:'Turn PNG images into small JPG files.',c:'qb',a:'image/png',t:'image/jpeg',h:'PNG to JPG',p:'Convert PNG to JPG for smaller files. JPG has no transparency, so choose a background color that fills any transparent areas.',f:[['What happens to transparency?','Transparent areas are filled with the background color you choose.'],['Which quality is best?','90% is a good balance of size and clarity.']]},
+webp:{n:'WebP Converter',d:'Convert images to modern WebP.',c:'q',t:'image/webp',h:'WebP Converter',p:'WebP files are usually much smaller than JPG or PNG at similar quality, which helps pages load faster. Upload any common image and download a WebP.',f:[['Is WebP supported everywhere?','All modern browsers support it. Some older apps may not open it.'],['Is it lossless?','At lower quality settings it is lossy. At 100% it is nearly lossless.']]},
+crop:{n:'Image Cropper',d:'Crop visually with ratio presets.',c:'k',h:'Image Cropper Online',p:'Drag the box over the part of the picture you want to keep. Choose a ratio like square, portrait or landscape, then use the size slider to make the box larger or smaller.',f:[['How do I move the crop box?','Touch or click and drag on the image.'],['Is the crop full quality?','Yes. It crops from the original pixels, not the preview.']]}};
+const sv=p=>'<svg viewBox="0 0 24 24">'+p+'</svg>';
+const IC={compress:sv('<path d="M4 14h6v6M20 10h-6V4M14 10l7-7M3 21l7-7"/>'),resize:sv('<path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>'),jpg2png:sv('<rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="1.5"/><path d="M21 16l-5-5-8 8"/>'),png2jpg:sv('<path d="M7 7h11l-3-3M17 17H6l3 3"/>'),webp:sv('<path d="M13 2L4 14h7l-1 8 9-12h-7z"/>'),crop:sv('<path d="M6 2v14a2 2 0 002 2h14M2 6h14a2 2 0 012 2v14"/>')};
+const TN={compress:['#f1eaff','#6d3cf0'],resize:['#e8f0ff','#2f6bff'],jpg2png:['#ffeaf4','#e0307f'],png2jpg:['#fff3e0','#d97706'],webp:['#e6f8ee','#14a05a'],crop:['#e3f6f8','#0c8fa0']};
+$('#fl').innerHTML=Object.keys(T).map(k=>`<a href="#${k}">${T[k].n}</a>`).join('');
+function route(){const k=location.hash.slice(1);scrollTo(0,0);T[k]?tool(k):home()}
+function home(){document.title='ImageKit Tools – Free Online Image Compressor, Resizer & Converter';
+A.innerHTML=`<section class="hero"><h1>Free image tools that stay on your device</h1><p>Compress, resize, crop and convert JPG, PNG and WebP in seconds. No sign-up, no uploads.</p><div class="sw"><input id="s" type="search" placeholder="Search tools, e.g. compress" aria-label="Search tools"></div><div class="chips"><span>100% private</span><span>Free forever</span><span>No sign-up</span><span>Works on mobile</span></div></section>
+<h2 id="tools">All tools</h2><div class="grid" id="g"></div>
+<h2>Why ImageKit Tools</h2><div class="grid"><div class="ft"><i class="ic">${sv('<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/>')}</i><div><b>Private by design</b><span>Images are processed on your device and never uploaded.</span></div></div><div class="ft"><i class="ic">${sv('<path d="M13 2L4 14h7l-1 8 9-12h-7z"/>')}</i><div><b>Fast</b><span>No waiting for uploads or queues. Results appear instantly.</span></div></div><div class="ft"><i class="ic">${sv('<circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/>')}</i><div><b>Free, no account</b><span>No sign-up, no watermark, no limits on use.</span></div></div><div class="ft"><i class="ic">${sv('<rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18h2"/>')}</i><div><b>Made for mobile</b><span>Works smoothly on phones, tablets and desktops.</span></div></div></div><h2 id="how">How it works</h2><div class="grid"><div class="box step"><em>1</em><div><b>Pick a tool</b><br>Choose what you need to do.</div></div><div class="box step"><em>2</em><div><b>Add your image</b><br>It is processed in your browser.</div></div><div class="box step"><em>3</em><div><b>Download</b><br>Save the result to your device.</div></div></div>
+<h2 id="faq">FAQ</h2><details><summary>Are my images uploaded?</summary>No. All processing happens in your browser.</details><details><summary>Is it free?</summary>Yes, all tools are free with no account.</details><details><summary>Which formats work?</summary>JPG, PNG and WebP.</details><div class="cta"><h2>Ready to try it?</h2><a class="btn" href="#compress">Compress an image</a></div>`;
+const g=$('#g');const draw=q=>g.innerHTML=Object.keys(T).filter(k=>(T[k].n+T[k].d).toLowerCase().includes(q)).map(k=>`<a class="card" href="#${k}"><i class="ic" style="background:${TN[k][0]};color:${TN[k][1]}">${IC[k]}</i><div><b>${T[k].n}</b><span>${T[k].d}</span></div></a>`).join('')||'<p>No tools found.</p>';
+draw('');$('#s').oninput=e=>draw(e.target.value.toLowerCase())}
+let S={},ob;
+function tool(k){const t=T[k];document.title=t.h+' – Free & Private | ImageKit Tools';S={k};
+const c=t.c;const r=(x)=>c.includes(x);
+const ctr=(r('q')?'<label>Quality: <span id="qv">80</span>%<input id="q" type="range" min="10" max="100" value="80"></label>':'')+
+(r('f')?'<label>Output<select id="fm"><option value="same">Same as original</option><option value="image/jpeg">JPG</option><option value="image/webp">WebP</option></select></label>':'')+
+(r('b')?'<label>Background<input id="bg" type="color" value="#ffffff"></label>':'')+
+(r('z')?'<label>Preset<select id="ps"><option value="">Custom</option><option value="1080x1080">1080×1080 Square</option><option value="1280x720">1280×720 HD</option><option value="1920x1080">1920×1080 Full HD</option><option value="800x600">800×600</option><option value="400x400">400×400 Avatar</option></select></label><label>Width (px)<input id="w" type="number" min="1" max="8000"></label><label>Height (px)<input id="h" type="number" min="1" max="8000"></label><label><input id="lk" type="checkbox" checked style="width:auto"> Keep aspect ratio</label>':'')+
+(r('k')?'<label>Ratio<select id="as"><option value="1">Square 1:1</option><option value="0.8">Portrait 4:5</option><option value="0.5625">Story 9:16</option><option value="1.7778">Landscape 16:9</option><option value="1.3333">Landscape 4:3</option><option value="0">Free</option></select></label><label>Box size<input id="ks" type="range" min="10" max="100" value="80"></label><label>Format<select id="kf"><option value="image/png">PNG</option><option value="image/jpeg">JPG</option></select></label>':'');
+const rel=Object.keys(T).filter(x=>x!=k).slice(0,3).map(x=>`<a href="#${x}">${T[x].n}</a>`).join('');
+A.innerHTML=`<div class="bc"><a href="#">Home</a> › ${t.n}</div><div class="th"><i class="ic" style="background:${TN[k][0]};color:${TN[k][1]}">${IC[k]}</i><h1>${t.h}</h1></div><p style="color:var(--mu);margin:8px 0 18px">${t.d} Free, private, no sign-up.</p>
+<div class="box"><label class="drop"><svg class="up" viewBox="0 0 24 24"><path d="M12 16V4M7 9l5-5 5 5M4 16v3a2 2 0 002 2h12a2 2 0 002-2v-3"/></svg>Tap to choose an image<small>or drag and drop it here · JPG, PNG, WebP · up to 25 MB</small><input id="fi" type="file" accept="${t.a||'image/jpeg,image/png,image/webp,image/gif'}"></label><div id="msg" class="err"></div><div id="ui" hidden><div class="row">${ctr}</div><div id="pvw"></div><p class="st" id="st"></p><a class="btn" id="dl" aria-disabled="true">Download</a></div><div class="priv"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></svg>Your image stays on your device. Nothing is uploaded.</div></div>
+<div class="ad">Advertisement (placeholder)</div>
+<h2>About this tool</h2><p>${t.p}</p><h2>How to use</h2><ol><li>Choose your image.</li><li>Adjust the settings.</li><li>Tap Download.</li></ol>
+<h2>FAQ</h2>${t.f.map(f=>`<details><summary>${f[0]}</summary>${f[1]}</details>`).join('')}<h2>Related tools</h2><div class="rel">${rel}</div>`;
+$('#fi').onchange=e=>load(e.target.files[0]);const dz=$('.drop');['dragover','dragenter'].forEach(v=>dz.addEventListener(v,e=>{e.preventDefault();dz.classList.add('over')}));['dragleave','drop'].forEach(v=>dz.addEventListener(v,e=>{e.preventDefault();dz.classList.remove('over')}));dz.addEventListener('drop',e=>load(e.dataTransfer.files[0]));
+document.querySelectorAll('#ui input,#ui select').forEach(el=>el.oninput=()=>change(el))}
+const err=m=>{$('#msg').textContent=m};
+function load(f){err('');if(!f)return;const t=T[S.k];
+if(!/^image\/(jpeg|png|webp|gif)$/.test(f.type))return err('Unsupported file. Use JPG, PNG or WebP.');
+if(t.a&&f.type!==t.a)return err('Please choose a '+t.a.split('/')[1].toUpperCase()+' file.');
+if(f.size>25e6)return err('File is over 25 MB. Choose a smaller image.');
+const i=new Image(),u=URL.createObjectURL(f);i.onload=()=>{if(i.naturalWidth*i.naturalHeight>64e6)return err('Image dimensions are too large.');
+S.f=f;S.i=i;S.w=i.naturalWidth;S.h=i.naturalHeight;$('#ui').hidden=false;
+if($('#w')){$('#w').value=S.w;$('#h').value=S.h}
+if(S.k=='crop')cropInit();else run()};i.onerror=()=>err('Could not read this image.');i.src=u}
+function change(el){if(el.id=='qv')return;if($('#qv'))$('#qv').textContent=$('#q').value;
+if(el.id=='ps'&&el.value){const[a,b]=el.value.split('x');$('#w').value=a;$('#h').value=b}
+else if(el.id=='w'&&$('#lk').checked)$('#h').value=Math.max(1,Math.round(el.value*S.h/S.w));
+else if(el.id=='h'&&$('#lk').checked)$('#w').value=Math.max(1,Math.round(el.value*S.w/S.h));
+if(!S.f)return;S.k=='crop'?cropUpd(el):run()}
+const same=ty=>/jpeg|png|webp/.test(ty)?ty:'image/png';
+async function run(){$('#st').textContent='Processing…';const k=S.k,t=T[k];let w=S.w,h=S.h,ty=t.t||same(S.f.type);
+if(k=='resize'){w=Math.min(8000,Math.max(1,+$('#w').value||S.w));h=Math.min(8000,Math.max(1,+$('#h').value||S.h))}
+if(k=='compress'&&$('#fm').value!='same')ty=$('#fm').value;
+const q=$('#q')?$('#q').value/100:.92;const cv=document.createElement('canvas');cv.width=w;cv.height=h;const x=cv.getContext('2d');
+if(ty=='image/jpeg'){x.fillStyle=$('#bg')?$('#bg').value:'#fff';x.fillRect(0,0,w,h)}
+x.drawImage(S.i,0,0,w,h);cv.toBlob(b=>b?show(b,ty):err('Conversion failed on this device.'),ty,q)}
+function show(b,ty,pv){S.b=b;if(ob)URL.revokeObjectURL(ob);ob=URL.createObjectURL(b);
+if(!pv)$('#pvw').innerHTML=`<img class="pv" alt="Processed image preview" src="${ob}">`;
+const o=S.f.size,n=b.size,p=Math.round((1-n/o)*100);
+$('#st').textContent=`Original ${kb(o)} → New ${kb(n)} (${p>=0?p+'% saved':-p+'% larger'})`;
+const d=$('#dl');d.href=ob;d.download=S.f.name.replace(/\.\w+$/,'')+'-imagekit.'+ty.split('/')[1].replace('jpeg','jpg');d.removeAttribute('aria-disabled')}
+const kb=n=>n>1e6?(n/1e6).toFixed(2)+' MB':Math.round(n/1e3)+' KB';
+let C;
+function cropInit(){const cv=document.createElement('canvas');cv.className='pv';$('#pvw').innerHTML='';$('#pvw').append(cv);
+C={cv,x:0,y:0,w:0,h:0};cropBox();cv.onpointerdown=e=>{cv.setPointerCapture(e.pointerId);C.d=1;C.o=pt(e);C.ox=C.x;C.oy=C.y};
+cv.onpointermove=e=>{if(!C.d)return;const p=pt(e);C.x=cl(C.ox+p[0]-C.o[0],0,S.w-C.w);C.y=cl(C.oy+p[1]-C.o[1],0,S.h-C.h);draw()};
+cv.onpointerup=()=>{C.d=0;out()}}
+const cl=(v,a,b)=>Math.min(b,Math.max(a,v)),pt=e=>{const r=C.cv.getBoundingClientRect();return[(e.clientX-r.left)*S.w/r.width,(e.clientY-r.top)*S.h/r.height]};
+function cropBox(){const a=+$('#as').value||S.w/S.h,s=$('#ks').value/100;let w=S.w,h=w/a;if(h>S.h){h=S.h;w=h*a}
+C.w=Math.round(w*s);C.h=Math.round(h*s);C.x=cl(C.x,0,S.w-C.w);C.y=cl(C.y,0,S.h-C.h);draw();out()}
+function cropUpd(){cropBox()}
+function draw(){const cv=C.cv,k=Math.min(1,900/S.w);cv.width=S.w*k;cv.height=S.h*k;const x=cv.getContext('2d');
+x.drawImage(S.i,0,0,cv.width,cv.height);x.fillStyle='rgba(27,21,48,.55)';
+const X=C.x*k,Y=C.y*k,W=C.w*k,H=C.h*k;x.fillRect(0,0,cv.width,Y);x.fillRect(0,Y+H,cv.width,cv.height);x.fillRect(0,Y,X,H);x.fillRect(X+W,Y,cv.width,H);
+x.strokeStyle='#fff';x.lineWidth=3;x.strokeRect(X,Y,W,H)}
+function out(){const ty=$('#kf').value,o=document.createElement('canvas');o.width=C.w;o.height=C.h;const x=o.getContext('2d');
+if(ty=='image/jpeg'){x.fillStyle='#fff';x.fillRect(0,0,C.w,C.h)}x.drawImage(S.i,C.x,C.y,C.w,C.h,0,0,C.w,C.h);
+o.toBlob(b=>b?show(b,ty,1):err('Crop failed.'),ty,.95)}
+addEventListener('hashchange',route);route();
+</script></body></html>
